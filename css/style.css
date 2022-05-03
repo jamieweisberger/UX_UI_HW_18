@@ -58,6 +58,11 @@ h3{
     font-family: 'Playfair Display';
     transform: translate(-20%);
 }
+h4{
+    font-size: 35px;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
 
 
 /* Hero Image */
@@ -74,6 +79,86 @@ h3{
 p{
     font-family:'Quicksand';
 }
+
+/*My UX Skills Section coded using CSS Flex */
+.flexContainer{
+    display:flex;
+    height: 400px;
+    width: 800px;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+  
+  .skill1, .skill2, .skill3 {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    margin-bottom: 20px;
+
+  }
+  .skill1 {
+    margin-top:20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  
+  }
+  .skill2 {
+    margin-top:20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  .skill3 {
+    margin-top:20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    background: rgba(135, 250, 246, 0.626);
+    width: 100%;
+    padding: 20px 40px;
+    color: rgb(0, 0, 0);
+  }
+  
+
+/*My Work Section constructed using CSS Grid*/
+
+.workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "Project One"
+    "Project Two"
+    ;
+  }
+  #work1 {
+    grid-area: Project One;
+  
+  }
+  #work2 {
+    grid-area: Project Two;
+  
+  }
+
+  .projectGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+  }
+  
 
 
 /* Footer */
