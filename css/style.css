@@ -64,10 +64,14 @@ h4{
     text-align: center;
 }
 
+button{
+    background-color: aquamarine;
+}
+
 
 /* Hero Image */
 .heroImg{
-    height:600px;
+    height:1200px;
     padding:25px;
 }
 
@@ -81,15 +85,31 @@ p{
 }
 
 /*My UX Skills Section coded using CSS Flex */
+
+.imageContainer{
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 800px;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .flexContainer{
     display:flex;
     height: 400px;
     width: 800px;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: auto;
     align-items: center;
     justify-content: space-around;
 
+}
+.item{
+    margin:5px;
+    height:200px;
+    width:200px;
 }
 
   
@@ -134,14 +154,15 @@ p{
     margin: 0px 5%;
     display: grid;
     grid-template-rows: 300px 300px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "Project One"
-    "Project Two"
+    "Image1 Image2"
+    "Project1 Project2"
     ;
   }
   #work1 {
-    grid-area: Project One;
+    grid-area: Image1;
+    grid-area: Project1;
   
   }
   #work2 {
